@@ -1,4 +1,5 @@
 import { Template } from 'meteor/templating';
+import { Random } from 'meteor/random';
 import './css-star-rating.html';
 
 Template.rating.onCreated(function() {

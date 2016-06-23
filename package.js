@@ -11,6 +11,7 @@ Package.onUse(function(api) {
     api.use('ecmascript');
     api.use('fortawesome:fontawesome@4.5.0');
     api.use('templating', 'client');
+    api.use('random');
     api.mainModule('css-star-rating.js', 'client');
     api.addFiles('css-star-rating.css', 'client');
     api.addFiles('css-star-rating.html', 'client');
