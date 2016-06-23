@@ -1,6 +1,6 @@
 Package.describe({
     name: 'kosst:css-star-rating',
-    version: '0.1.0',
+    version: '0.1.1',
     summary: 'CSS Star Rating Widget',
     git: 'https://github.com/kosst/css-star-rating.git',
     documentation: 'README.md'
