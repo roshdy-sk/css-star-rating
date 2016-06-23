@@ -1,0 +1,29 @@
+<template name="rating">
+    <fieldset class="{{#unless disabled}}active {{/unless}}rating">
+        <input id="star-5-{{_uid}}" type="radio" name="rating-{{_uid}}" value="5" {{disabled}} />
+        <label for="star-5-{{_uid}}" class="full"></label>
+        <input id="star-45-{{_uid}}" type="radio" name="rating-{{_uid}}" value="4.5" {{disabled}} />
+        <label for="star-45-{{_uid}}" class="half"></label>
+        <input id="star-4-{{_uid}}" type="radio" name="rating-{{_uid}}" value="4" {{disabled}} />
+        <label for="star-4-{{_uid}}" class="full"></label>
+        <input id="star-35-{{_uid}}" type="radio" name="rating-{{_uid}}" value="3.5" {{disabled}} />
+        <label for="star-35-{{_uid}}" class="half"></label>
+        <input id="star-3-{{_uid}}" type="radio" name="rating-{{_uid}}" value="3" {{disabled}} />
+        <label for="star-3-{{_uid}}" class="full"></label>
+        <input id="star-25-{{_uid}}" type="radio" name="rating-{{_uid}}" value="2.5" {{disabled}} />
+        <label for="star-25-{{_uid}}" class="half"></label>
+        <input id="star-2-{{_uid}}" type="radio" name="rating-{{_uid}}" value="2" {{disabled}} />
+        <label for="star-2-{{_uid}}" class="full"></label>
+        <input id="star-15-{{_uid}}" type="radio" name="rating-{{_uid}}" value="1.5" {{disabled}} />
+        <label for="star-15-{{_uid}}" class="half"></label>
+        <input id="star-1-{{_uid}}" type="radio" name="rating-{{_uid}}" value="1" {{disabled}} />
+        <label for="star-1-{{_uid}}" class="full"></label>
+        <input id="star-05-{{_uid}}" type="radio" name="rating-{{_uid}}" value="0.5" {{disabled}} />
+        <label for="star-05-{{_uid}}" class="half"></label>
+        <input id="star-0-{{_uid}}" type="radio" name="rating-{{_uid}}" value="0" {{disabled}} />
+        {{#unless disabled}}
+            <label for="star-0-{{_uid}}" class="reset-stars"></label>
+        {{/unless}}
+    </fieldset>
+    <div class="clear-float"></div>
+</template>
