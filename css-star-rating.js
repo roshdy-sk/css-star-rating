@@ -12,7 +12,7 @@ Template.rating.onRendered(function() {
         const defaultValue = Template.currentData().defaultValue || 0;
         let value = Template.currentData().value;
         if (value == null) value = defaultValue;
-        const selector = `.rating > input[value="${value}"]`;
+        const selector = `#star-${value}-${Template.instance().uid}`;
         this.$(selector).prop('checked', true);
     });
 });
@@ -23,6 +23,23 @@ Template.rating.helpers({
     },
     disabled() {
         return Template.currentData().disabled ? 'disabled' : '';
+    },
+    style() {
+        return Template.currentData().style || '';
+    },
+    star_style(){
+        return Template.currentData().star_style || '';
+    },
+    full_only(){
+        return Template.currentData().full_only? Template.currentData().full_only : true;
+    },
+    enable_reset(){
+        if(Template.currentData().disabled){
+            return false;
+        }
+        else{
+            return Template.currentData().enable_reset || false;
+        }
     }
 });
 

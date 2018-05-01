@@ -1,8 +1,8 @@
 Package.describe({
-    name: 'kosst:css-star-rating',
-    version: '0.1.1',
+    name: 'roshdy:css-star-rating',
+    version: '0.1.2',
     summary: 'CSS Star Rating Widget',
-    git: 'https://github.com/kosst/css-star-rating.git',
+    git: 'https://github.com/roshdy/css-star-rating.git',
     documentation: 'README.md'
 });
 
@@ -20,6 +20,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
     api.use('ecmascript');
     api.use('tinytest');
-    api.use('kosst:css-star-rating');
+    api.use('roshdy:css-star-rating');
     api.mainModule('css-star-rating-tests.js');
 });
